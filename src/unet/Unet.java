@@ -5,7 +5,7 @@
  */
 package unet;
 import java.io.*;
-import unet.Persona;
+import unet.*;
 /**
  *
  * @author John.llanes
@@ -17,16 +17,15 @@ public class Unet {
      */
     public static void main(String[] args)throws IOException {
         // TODO code application logic here
-      Persona []lis=new Persona[2];
-      
-      lis[0]=new Persona();
-      lis[0].cargar_Dato_Scanener();
-      
-      lis[1]=new Persona();
-      lis[1].mostrar_Dato_DataInputStream();
-      
-      lis[0].mostrar_Datos();
-      lis[1].mostrar_Datos();
+       Alumno pedro=new Alumno();
+       Profesor mario=new Profesor();
+       
+       pedro.cargar_datos();
+       mario.cargar_Datos();
+       
+       pedro.mostar_Datos();
+       mario.mostar_Datos();
+
         
     }
     
