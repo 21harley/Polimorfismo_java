@@ -10,7 +10,7 @@ import java.io.*;
  *
  * @author CASA
  */
-public class Persona {
+public abstract class Persona {
     String nombre;
     String cedula;
     String telefono;
@@ -36,7 +36,7 @@ public class Persona {
         System.out.println("Telefono");
         this.telefono=lec.nextLine();
     }
-    void mostrar_Dato_DataInputStream()throws IOException {
+    void cargar_Dato_DataInputStream()throws IOException {
         DataInputStream lector=new DataInputStream(System.in);
         System.out.println("Ingrese los proximos datos");
         System.out.println("Nombre");
@@ -55,7 +55,8 @@ public class Persona {
         System.out.println("Edad: "+this.edad);
         System.out.println("Telefono:"+this.telefono);
     }
-
+    abstract public void mostrar_datos2();
+    
     public String getNombre() {
         return nombre;
     }
