@@ -17,16 +17,25 @@ public class Unet {
      */
     public static void main(String[] args)throws IOException {
         // TODO code application logic here
-       Alumno pedro=new Alumno();
-       Profesor mario=new Profesor();
+       Persona []lista=new Persona[3];
+     
+       lista[0]=new Alumno();
+       lista[1]=new Profesor();
+       lista[2]=new Alumno();
        
-       pedro.cargar_datos();
-       mario.cargar_Datos();
+       lista[0].cargar_Dato_DataInputStream();
+       lista[1].cargar_Dato_DataInputStream();
+       lista[2].cargar_Dato_DataInputStream();
        
-       pedro.mostar_Datos();
-       mario.mostar_Datos();
-
-        
+        System.out.println("Lista de Alumnos");
+       
+       for(int i=0;i<lista.length;i++){
+           if(lista[i] instanceof Alumno){
+             lista[i].mostrar_datos2();
+           }
+       }
+       
+       
     }
     
 }
