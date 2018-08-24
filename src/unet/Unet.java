@@ -23,9 +23,9 @@ public class Unet {
        lista[1]=new Profesor();
        lista[2]=new Alumno();
        
-       lista[0].cargar_Dato_DataInputStream();
-       lista[1].cargar_Dato_DataInputStream();
-       lista[2].cargar_Dato_DataInputStream();
+       lista[0].cargar_Datos();
+       lista[1].cargar_Datos();
+       lista[2].cargar_Datos();
        
         System.out.println("Lista de Alumnos");
        
